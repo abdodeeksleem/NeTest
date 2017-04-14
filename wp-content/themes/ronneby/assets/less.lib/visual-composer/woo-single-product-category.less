@@ -1,0 +1,64 @@
+/* 
+    Created on : 02.03.2015, 17:37:08
+    Author     : DFD
+	Styles for : Single product category
+*/
+.dfd-woo-single-category {
+	.rel();
+	.block();
+	overflow: hidden;
+	.left {
+		overflow: hidden;
+	}
+	img {
+		.block();
+		.scale(1);
+		.transition-transform(3s ease);
+	}
+	.dfd-heading {
+		.abs();
+		top: 50%;
+		left: 0;
+		.block();
+		width: 100%;
+		text-align: center;
+		padding: 0 10px;
+		.transform(translateY(-50%));
+		.inline-block {
+			padding: 10px 30px;
+			background: @third-site-dark-color;
+		}
+		div.box-name {
+			font-size: 12px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: @main-site-dark-color;
+			.transform(translateY(50%));
+			.transition-transform(.3s ease-in-out);
+			a {
+				color: inherit;
+			}
+		}
+		div.subtitle {
+			color: fade(@main-site-dark-color, 50%);
+			.opacity(0);
+			.transition(opacity .3s ease-in-out);
+			a {
+				color: inherit;
+			}
+		}
+	}
+	&:hover {
+		img {
+			.scale(1.1);
+		}
+		.dfd-heading {
+			div.box-name {
+				.transform(translateY(0));
+			}
+			div.subtitle {
+				.opacity(1);
+			}
+		}
+	}
+}

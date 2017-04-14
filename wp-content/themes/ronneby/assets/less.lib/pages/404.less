@@ -1,0 +1,241 @@
+/*------------------------------------------------------------------
+[404 Page Stylesheet]
+
+Project:	Ronneby theme
+Version:	1.0
+Last change:	16/06/15
+Assigned to:	DFD
+Primary use:	404 page styles
+-------------------------------------------------------------------*/
+.row {
+	article.not-found404 {
+		header {
+			.rel();
+			font-family: @font-titles;
+			line-height: 1;
+			z-index: 0;
+			h1 {
+				font-size: 300px;
+				text-transform: uppercase;
+				width: 100%;
+				line-height: 1;
+				margin-bottom: 0;
+				color: #efefef;
+				z-index: -1;
+			}
+			.name {
+				font-size: 30px;
+				font-weight: bold;
+				line-height: inherit;
+				margin: -230px 0 0;
+				padding-bottom: 25px;
+				color: @title-color;
+				
+				strong {
+					.block();
+					font-size: 100px;
+					padding-bottom: 10px;
+					color: @main-site-light-color;
+				}
+			}
+			.subtitle-name {
+				.subtitle();
+				line-height: inherit;
+				padding-bottom: 100px;
+				margin: 0;
+			}
+		}
+		.container {
+			.arhives {
+				.rel();
+				border: 1px solid @border-color;
+				z-index: 1;
+				
+				select {
+					height: 56px;
+					padding-left: 20px;
+					background: transparent;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					border-width: 0;
+					.dfd-font-styles();
+				}
+				&:before {
+					content: "\ec1c";
+					.abs();
+					width: 58px;
+					height: 58px;
+					line-height: 58px;
+					top: -1px;
+					right: -1px;
+					color: @forth-site-dark-color;
+					font-family: @font-icons-main;
+					font-weight: bold;
+					font-size: 10px;
+					text-align: center;
+					z-index: -1;
+					background: transparent;
+				}
+			}
+			form {
+				.rel();
+				border: 1px solid @border-color;
+				
+				i {
+					.hide();
+					
+				}
+				input[type="text"] {
+					margin: 0;
+					border-width: 0;
+					background: transparent;
+					padding: 0;
+					padding-left: 20px;
+					line-height: 56px;
+					
+				}
+				input[type="submit"] {
+					.abs();
+					right: 0;
+					top: 0;
+					width: 56px;
+					height: 100%;
+					border-width: 0;
+					padding: 0;
+					background: transparent;
+					color: transparent;
+					cursor: pointer;
+				}
+				::-webkit-input-placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				::-moz-placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				:-moz-placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				:-ms-input-placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				:-o-placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				placeholder {
+					.dfd-font-styles(@default-text-font-style, @default-text-font-weight, @default-text-font-size, @default-text-font-family, @subtitles-color, 58px, @default-text-text-transform, @default-text-letter-spacing, @default-text-word-spacing);
+				}
+				&:before {
+					content: "\e97e";
+					.abs();
+					right: -1px;
+					top: -1px;
+					width: 58px;
+					height: 58px;
+					line-height: 58px;
+					text-align: center;
+					font-family: @font-icons-main;
+					font-size: 13px;
+					color: @forth-site-dark-color;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+/*Search page*/
+.search-page {
+	.post.format-quote .entry-content {
+		.hide();
+	}
+	#main-content article {
+		.rel();
+		&:last-child {
+			border-bottom-width: 0;
+		}
+		.entry-meta {
+			.hide();
+		}
+		&.type-post,
+		&.type-my-product {
+			.entry-meta {
+				.block();
+			}
+		}
+		&.post.no-results {
+			background: transparent;
+			header {
+				padding-top: 40px;
+				h1 {
+					font-size: 300px;
+					text-transform: uppercase;
+					text-align: center;
+					width: 100%;
+					line-height: 1;
+					color: #efefef;
+					z-index: -1;
+				}
+				p.heading {
+					font-family: @font-titles;
+					font-size: 30px;
+					font-weight: bold;
+					text-align: center;
+					color: @title-color;
+					padding-bottom: 25px;
+				}
+				p.subtitle {
+					text-align: center;
+					padding-bottom: 150px;
+				}
+			}
+			.entry-content {
+				margin-left: 0;
+				text-align: center;
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+body.error404,
+body.search-no-results {
+	.side-area-controller-wrap {
+		.hide();
+	}
+}
+.post.no-results.not-found {
+	background: transparent;
+	border-bottom-width: 0;
+	header {
+		padding-top: 40px;
+		h1 {
+			font-size: 300px;
+			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+			color: #efefef;
+			z-index: -1;
+		}
+		p.heading {
+			font-family: @font-titles;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			color: @title-color;
+			line-height: inherit;
+			margin: -180px 0 0;
+			padding-bottom: 25px;
+		}
+		p.subtitle {
+			text-align: center;
+			padding-bottom: 150px;
+		}
+	}
+	.entry-content {
+		margin-left: 0;
+		text-align: center;
+		p {
+			margin: 0;
+		}
+	}
+}

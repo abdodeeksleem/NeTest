@@ -1,0 +1,111 @@
+/* -----------------------------------------
+   Social share panel
+----------------------------------------- */
+.social-share {
+	font-size: inherit;
+	color: inherit;
+	a {
+		color: inherit;
+		.transition(color .3s ease-in-out);
+		&:hover {
+			color: @main-site-light-color;
+		}
+	}
+	i {
+		font-size: 11px;
+		line-height: inherit;
+	}
+}
+
+.dfd-blog-share-popup-wrap {
+	@s: 36px;
+	.rel();
+	float: right;
+	.dfd-share-icons {
+		.abs();
+		right: 0;
+		width: 196px;
+		height: @s;
+		overflow: hidden;
+		.opacity(0);
+		.transition(opacity .3s ease);
+		> a {
+			font-size: 12px;
+			.abs();
+			top: 0;
+			left: (@s + 4)*4;
+			.block();
+			width: @s;
+			height: @s;
+			line-height: @s;
+			text-align: center;
+			color: @main-site-dark-color;
+			.rounded(50%);
+			.rotate(90deg);
+			-webkit-transition: left .3s ease, -webkit-transform .3s ease;
+			-moz-transition: left .3s ease, -moz-transform .3s ease;
+			-o-transition: left .3s ease, -o-transform .3s ease;
+			transition: left .3s ease, -webkit-transform .3s ease, transform .3s ease;
+			&.facebook {
+				background: #39579a;
+			}
+			&.twitter {
+				background: #50abf0;
+			}
+			&.googleplus {
+				background: #df4a32;
+			}
+			&.linkedin {
+				background: #e1003a;
+			}
+			&.pinterest {
+				background: #cd1d1e;
+			}
+		}
+	}
+	.dfd-share-title {
+		overflow: hidden;
+		width: 100px;
+		height: @s;
+		line-height: @s;
+		text-align: center;
+		background: @border-color;
+		.rounded(@s);
+		.transition(~"width .3s ease, opacity .3s ease");
+		> span {
+			padding-left: 2px;
+		}
+	}
+	&:hover {
+		.dfd-share-icons {
+			.opacity(1);
+			> a {
+				.rotate(0);
+				&.facebook {
+					left: 0;
+					background: #39579a;
+				}
+				&.twitter {
+					left: @s + 4;
+					background: #50abf0;
+				}
+				&.googleplus {
+					left: (@s + 4)*2;
+					background: #df4a32;
+				}
+				&.linkedin {
+					left: (@s + 4)*3;
+					background: #e1003a;
+				}
+				&.pinterest {
+					left: (@s + 4)*4;
+					background: #cd1d1e;
+				}
+			}
+		}
+		.dfd-share-title {
+			width: 0;
+			.opacity(0);
+		}
+	}
+}

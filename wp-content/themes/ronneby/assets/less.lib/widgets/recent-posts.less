@@ -1,0 +1,81 @@
+/* Recent posts widget styles */
+.news-title-style() {
+	.block-title();
+}
+
+.recent-posts-list {
+	li {
+		.clearfix();
+	}
+	.post-item {
+		padding-bottom: 30px;
+		
+		&:last-child {
+			padding-bottom: 0;
+		}
+		
+		.entry-thumb {
+			float: left;
+			
+			&, & img {
+				width: @recent-post-thumbnail-width;
+				height: @recent-post-thumbnail-width;
+				.rounded(50%);
+			}
+		}
+		.entry-thumb + .entry-content-wrap {
+			margin-left: @recent-post-thumbnail-width + 20;
+		}
+		.entry-content-wrap {
+			margin-top: -5px;
+			
+			.widget-inner-heading {
+				.dfd-widget-post-typ();
+				padding-bottom: 5px;
+				.transition(color .3s ease);
+				a {
+					color: inherit;
+					
+				}
+				&:hover {
+					color: @main-site-light-color;
+				}
+			}
+			.subtitle {
+				span {
+					&.author a {
+						font-family: @default-text-font-family;
+						font-style: normal;
+						color: @title-color;
+						text-transform: capitalize;
+					}
+					&.entry-comments a {
+						.dfd-widget-comment-author-typ();
+						color: @main-site-light-color;
+						//color: inherit;
+						&:hover {
+							color: @title-color;
+						}
+					}
+					&.author a,
+					&.entry-comments a {
+						.transition(color .3s ease-in-out);
+					}
+				}
+			}
+			.entry-meta {
+				margin-bottom: 0;
+				.transition(~"opacity .3s ease-in-out, visibility .3s ease-in-out, margin-top .3s ease-in-out, margin-bottom .3s ease-in-out");
+				
+				a {
+					.transition(color .2s ease-in-out);
+				}
+			}
+		}
+		.entry-summary {
+			clear: both;
+			padding: 20px 0 0 0;
+			margin-top: 0;
+		}
+	}
+}

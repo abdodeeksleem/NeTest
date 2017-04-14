@@ -1,0 +1,350 @@
+#market-rates {
+    height: 200px;
+}
+
+.assets.assets-categories .asset-category {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #5cbe1b;
+    color: #4f4f4f;
+    display: block;
+    font-family: AGLight !important;
+    font-size: 14px;
+    height: 100%;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.assets-categories {
+    border: 1px solid #5cbe1b;
+    float: left;
+    height: 100%;
+    list-style: outside none none;
+    margin-right: 10px;
+    padding: 0;
+    width: 175px;
+}
+
+#market-rates li::before {
+    background: none;
+    display: none;
+}
+
+.assets-list > li {
+    height: 25% !important;
+}
+
+.active.asset-category, .assets-categories li:hover .asset-category, .assets-categories li.active, .tabs.assets.assets-categories > li.active > a {
+    background-color: #5cbe1b !important;
+    color: #ffffff !important;
+}
+
+
+
+.assets.assets-categories li:last-child .asset-category {
+    border: none;
+}
+
+.assets-categories > li {
+    display: block;
+    height: 25% !important;
+}
+
+.asset-icon {
+    background-image: url("/wp-content/plugins/marketrates-widget/images/icons.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-top: -8px;
+    position: relative;
+    width: 30px;
+}
+
+.asset-icon.currencies-icon {
+    background-position: -1px 0px;
+}
+
+.tabs.assets li.active .asset-icon.currencies-icon,.asset-category.active .asset-icon.currencies-icon, .assets-categories li:hover .asset-icon.currencies-icon {
+    background-position: -1px -34px;
+}
+
+.asset-icon.stocks-icon {
+    background-position: -77px -2px;
+}
+
+.tabs.assets li.active .asset-icon.stocks-icon, .asset-category.active .asset-icon.stocks-icon, .assets-categories li:hover .asset-icon.stocks-icon {
+    background-position: -77px -37px;
+}
+
+.commodities-icon {
+    background-position: -36px -2px;
+}
+
+.tabs.assets li.active .asset-icon.commodities-icon, .asset-category.active .asset-icon.commodities-icon, .assets-categories li:hover .asset-icon.commodities-icon {
+    background-position: -36px -37px;
+}
+
+.asset-icon.indices-icon {
+    background-position: -123px -2px;
+}
+
+.tabs.assets li.active .asset-icon.indices-icon, .asset-category.active .asset-icon.indices-icon, .assets-categories li:hover .asset-icon.indices-icon {
+    background-position:  -123px -37px;
+}
+
+.assets.assets-list {
+    display: block;
+    float: left;
+    height: 100% !important;
+    list-style: outside none none;
+    padding: 0;
+    width: 113px;
+}
+
+.asset-name {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #4f4f4f !important;
+    border-left: 1px solid #4f4f4f;
+    border-right: 1px solid #4f4f4f;
+    color: #4f4f4f !important;
+    display: block;
+    font-family: AGLight !important;
+    font-size: 14px !important;
+    height: 100% !important;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.assets li:first-child .asset-name {
+    border-top: 1px solid #4f4f4f;
+}
+
+.asset-name.active, .assets-list li:hover .asset-name, .tabs.assets li.active .asset-name {
+    font-family: AGLight !important;
+    border: 1px solid #5cbe1b !important;
+}
+
+.asset-category-container {
+    float: left;
+    height: 100%;
+}
+
+.asset-outer-container {
+    float: left;
+    width: 270px;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.asset-inner-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #4f4f4f;
+    height: 75%;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#currencies-tab, #commodities-tab, #indices-tab, #stocks-tab {
+    height: 100% !important;
+}
+
+.asset-inner-container .aname {
+    color: #4f4f4f;
+    font-size: 24px;
+    font-family: AGLight;
+}
+
+.asset-inner-container .arate {
+    color: #4f4f4f;
+    font-family: AGLight;
+    font-size: 50px !important;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.asset-btns {
+    height: 23%;
+    margin-top: 1%;
+}
+
+/*.arrow-up, .arrow-down {*/
+    /*background-image: url("/wp-content/plugins/marketrates-widget/images/arrows.png");*/
+    /*background-repeat: no-repeat;*/
+    /*display: block;*/
+    /*float: left;*/
+    /*height: 24px;*/
+    /*width: 24px;*/
+/*}*/
+
+/*.arrow-up {*/
+    /*background-position: 2px 5px;*/
+/*}*/
+
+/*.arrow-down {*/
+    /*background-position: -20px 4px;*/
+/*}*/
+
+/*.call, .put {*/
+    /*display: block;*/
+    /*font-size: 20px;*/
+    /*width: 134px;*/
+    /*padding-top: 2px;*/
+    /*padding-left: 28px;*/
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    /*font-family: AGLight;*/
+    /*float: left;*/
+/*}*/
+
+.call, .put {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    float: left;
+    font-family: AGLight;
+    font-size: 20px;
+    padding-top: 6px;
+    width: 134px;
+    text-align: center;
+}
+
+.call {
+    border: 1px solid #002161;
+    color: #002161;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.call:hover {
+    background-color: rgba(0, 33, 97, 0.5);
+    color: #ffffff;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+.put {
+    border: 1px solid #5cbe1b;
+    color: #5cbe1b;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.put:hover {
+    background-color: rgba(92, 190, 27, 0.5);
+    color: #ffffff;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+
+@media (max-width: 1200px) {
+    .assets-categories {
+        border: medium none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .assets-categories > li {
+        float: left;
+        width: 25%;
+    }
+
+    .asset-category, .assets.assets-categories li:last-child .asset-category {
+        border-bottom: 1px solid #5cbe1b;
+        border-left: 1px solid #5cbe1b;
+        border-top: 1px solid #5cbe1b;
+        height: 40px !important;
+        padding-top: 8px !important;
+    }
+
+    .assets.assets-categories li:last-child .asset-category {
+        border-right: 1px solid #5cbe1b;
+    }
+
+    .asset-category-container {
+        width: 100% !important;
+    }
+
+    .assets.assets-list {
+        border: medium none !important;
+        height: auto !important;
+        width: 100% !important;
+        margin-bottom: 5px !important;
+    }
+
+    .assets-list > li {
+        float: left;
+        height: 40px !important;
+        width: 25%;
+    }
+
+    .asset-name {
+        border-bottom: 1px solid #4f4f4f;
+        border-left: none !important;
+        border-top: 1px solid #4f4f4f;
+        height: 40px !important;
+        padding-top: 8px !important;
+    }
+
+    .asset-outer-container {
+        float: none !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        clear: both;
+        height: 130px !important;
+    }
+
+    .asset-inner-container {
+        float: left !important;
+        height: 100px !important;
+        width: 70% !important;
+    }
+
+    .asset-btns {
+        float: right !important;
+        height: 100px !important;
+        margin-top: 0 !important;
+        width: 29% !important;
+    }
+
+    .call, .put {
+        height: 48px !important;
+        padding-top: 13px !important;
+        width: 100% !important;
+    }
+
+    .call {
+        margin-bottom: 4px;
+    }
+
+    .asset-inner-container .arate {
+        font-size: 35px !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .asset-icon {
+        bottom: 0;
+        float: none !important;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0;
+        top: 0;
+    }
+}
+
+.asset-category-container {
+    display: none;
+}
+
+.asset-outer-container {
+    display: none;
+}
+#currencies {
+    display: block;
+}
+
+#EURUSD {
+    display: block;
+}

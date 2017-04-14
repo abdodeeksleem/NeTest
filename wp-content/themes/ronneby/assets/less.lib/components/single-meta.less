@@ -1,0 +1,82 @@
+/* 
+    Created on : 22.05.2015, 11:23:33
+    Author     : DFD
+	Styles for : Single post and portfolio meta
+*/
+.dfd-meta-container {
+	overflow: hidden;
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px dotted @border-color;
+	div.box-name {
+		font-size: @box-name-font-size - 3;
+		text-transform: uppercase;
+		margin-top: 5px;
+	}
+	.post-like-wrap {
+		margin-right: 25px;
+		.social-share {
+			overflow: hidden;
+			.block();
+			height: 40px;
+			line-height: 40px;
+			padding: 0 15px;
+			border: 1px solid @border-color;
+			.rounded(25px);
+			.transition(border-color .3s ease);
+			&:hover {
+				border-color: @main-site-light-color;
+				a {
+					color: inherit;
+				}
+			}
+			a {
+				overflow: hidden;
+				.block();
+			}
+			i {
+				font-size: 18px;
+				margin-right: 10px;
+			}
+			i,
+			span {
+				float: left;
+			}
+		}
+	}
+	.dfd-single-share {
+		text-align: center;
+	}
+	.dfd-single-tags {
+		text-align: right;
+		.post-tags {
+			overflow: hidden;
+			padding-bottom: 6px;
+			ul {
+				list-style: none;
+				.post-tags-item {
+					float: left;
+					margin-right: 8px;
+					background: @background-gray;
+					border: 1px solid @border-color;
+					.rounded(5px);
+					a {
+						.block();
+						height: 36px;
+						line-height: 36px;
+						padding: 0 20px;
+						color: @title-color;
+						.opacity(1);
+						.transition(opacity .3s ease);
+						&:hover {
+							.opacity(.5);
+						}
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

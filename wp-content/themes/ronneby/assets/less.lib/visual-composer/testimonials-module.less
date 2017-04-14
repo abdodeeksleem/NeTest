@@ -1,0 +1,136 @@
+/* 
+    Created on : 29.01.2015, 12:08:22
+    Author     : DFD
+	Styles for : Testimonials module
+*/
+.dfd-carousel-wrapper {
+	.dfd-testimonials {
+		padding: 0 40px !important;
+	}
+}
+.dfd-testimonials {
+	.dfd-testimonial-item {
+		&.dfd-no-image {
+			.icon-wrap {
+				i {
+					.inline-block();
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					background: fade(@forth-site-dark-color, 50%);
+					color: @main-site-dark-color;
+					.rounded(50%);
+					&:before {
+						.rel();
+						top: 2px;
+					}
+				}
+			}
+			&.text-left,
+			&.text-right {
+				.icon-wrap {
+					i {
+						background: transparent;
+						color: @subtitle-color;
+					}
+				}
+			}
+			&.top-image-position {
+				&.text-left,
+				&.text-right {
+					.icon-wrap {
+						padding-top: 0;
+					}
+				}
+			}
+		}
+		&.top-image-position {
+			&.text-left {
+				.icon-wrap {
+					float: right;
+					padding-top: 10px;
+				}
+				.subtitle {
+					.rel();
+					padding-left: 10px;
+					&:before {
+						content: "";
+						.block();
+						width: 1px;
+						height: @subtitles-font-size;
+						.abs();
+						top: 50%;
+						left: 0;
+						margin-top: -@subtitles-font-size/2;
+						background: fade(@widget-title-color, 20%);
+						.rotate(45deg);
+					}
+				}
+				.feature-title,
+				.subtitle {
+					.inline-block();
+					margin-right: 10px;
+				}
+			}
+			&.text-right {
+				.icon-wrap {
+					float: left;
+					padding-top: 10px;
+				}
+				.subtitle {
+					.rel();
+					padding-left: 10px;
+					&:before {
+						content: "";
+						.block();
+						width: 1px;
+						height: @subtitles-font-size;
+						.abs();
+						top: 50%;
+						left: 0;
+						margin-top: -@subtitles-font-size/2;
+						background: fade(@widget-title-color, 20%);
+						.rotate(45deg);
+					}
+				}
+				.feature-title,
+				.subtitle {
+					.inline-block();
+					margin-right: 10px;
+				}
+			}
+			.image-wrap {
+				margin-bottom: 20px;
+			}
+		}
+		.icon-wrap {
+			padding-bottom: 15px;
+			i {
+				font-size: 24px;
+				color: @icon-base-color;
+			}
+		}
+		.dfd-testimonial-content {
+			font-family: @subtitles-font-family;
+			font-size: @subtitles-font-size + 2;
+			font-style: @subtitles-font-style;
+			line-height: 2;
+			padding-bottom: 15px;
+		}
+		.dfd-testimonial-content + .icon-wrap {
+			padding-bottom: 0;
+		}
+		.image-wrap {
+			img {
+				.rounded(50%);
+			}
+		}
+		.feature-title {
+			padding-top: 10px;
+		}
+		.subtitle {
+			
+		}
+	}
+}

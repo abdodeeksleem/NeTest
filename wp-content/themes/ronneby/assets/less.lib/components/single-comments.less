@@ -1,0 +1,237 @@
+/* 
+    Created on : 16.01.2015, 14:18:23
+    Author     : DFD
+	Styles for : Single post comments
+*/
+/* Comments */
+#comments {
+	padding-bottom: 25px;
+	
+	h5 {
+		font-size: @block-title-font-size;
+		letter-spacing: 0;
+		padding-bottom: 25px;
+	}
+	.commentlist {
+		margin: 0;
+		
+		.comment {
+			>.clearfix {
+				padding: 30px 0;
+				background: @main-site-dark-color;
+				border-bottom: 1px dotted @border-color;
+				/* Arrow at author's image */
+				.avatar-box {
+					i {
+						font-size: 22px;
+						.abs();
+						right: 100%;
+						top: 50%;
+						.block();
+						line-height: 1;
+						margin-top: -.5em;
+						margin-right: 10px;
+						color: @border-color;
+					}
+				}
+				footer {
+					margin-top: 10px;
+					margin-left: 80px;
+				}
+			}
+			&.depth-1 {
+				>.clearfix .avatar-box {
+					i,
+					&:before,
+					&:after {
+						.hide();
+					}
+				}
+			}
+		}
+		li {
+			list-style: none;
+			padding-bottom: 20px;
+			.rel();
+			
+			ul.children {
+				margin-top: 10px;
+				margin-left: 0;
+				padding-left: 100px;
+				background: @main-site-dark-color;
+				
+				li {
+					.clearfix {
+						background: @main-site-dark-color;
+					}
+				}
+			}
+			.ovh {
+				margin-left: 80px;
+			}
+			.avatar-box {
+				.rel();
+				float: left;
+				overflow: hidden;
+				.rounded(50%);
+				
+				img {
+					vertical-align: top;
+				}
+			}
+			
+			.comment-author {
+				.clearfix();
+				height: 1em;
+				line-height: 1;
+				margin-left: 80px;
+				margin-bottom: 15px;
+				
+				.left {
+					line-height: inherit;
+					
+					> * {
+						line-height: inherit;
+					}
+				}
+				
+				.author {
+					float: left;
+					font-size: @box-name-font-size - 2;
+					text-transform: uppercase;
+					line-height: inherit;
+					padding-right: 10px;
+					margin-bottom: 0;
+					color: @title-color;
+					
+					a {
+						.block();
+						font-size: inherit;
+						font-style: inherit;
+						font-weight: inherit;
+						padding-bottom: 0;
+					}
+				}
+				.date {
+					.rel();
+					float: left;
+					line-height: inherit;
+					color: @news-widgets-entry-meta-color;
+				}
+			}
+			.reply {
+				@size: 30px;
+				.dop-link {
+					.rel();
+					.inline-block();
+					padding-right: 10px;
+					color: @subtitle-color;
+
+					a {
+						color: inherit;
+						.slide-up {
+							color: transparent;
+							text-shadow: 0 0 @subtitle-color, 0 @box-name-font-size + 2 @title-color;
+						}
+						&:hover {
+							.slide-up {
+								color: transparent;
+								text-shadow: 0 -(@box-name-font-size + 2) @subtitle-color, 0 0 @title-color;
+							}
+						}
+					}
+				}
+
+				a {
+					.rel();
+					.inline-block();
+					.box-name();
+					font-size: @box-name-font-size - 2;
+					text-transform: uppercase;
+					line-height: 1;
+					padding-bottom: 0;
+					color: @main-site-light-color;
+					overflow: hidden;
+					.slide-up {
+						.transition(text-shadow .3s ease-in-out);
+					}
+					&.comment-reply-link {
+						.slide-up {
+							color: transparent;
+							text-shadow: 0 0 @main-site-light-color, 0 @box-name-font-size + 2 @title-color;
+						}
+						&:hover {
+							.slide-up {
+								color: transparent;
+								text-shadow: 0 -(@box-name-font-size + 2) @main-site-light-color, 0 0 @title-color;
+							}
+						}
+					}
+				}
+			}
+			.comment-content {
+				.rel();
+				font-size: @subtitles-font-size + 1;
+				font-family: @subtitles-font-family;
+				font-style: @subtitles-font-style;
+				line-height: 2;
+				color: @title-color;
+				 p {
+					font-style: inherit;
+					line-height: inherit;
+					margin: 0;
+				 }
+			}
+		}
+	}
+}
+/* Respond */
+#respond {
+	padding-bottom: 30px;
+    
+	> h5 {
+		font-size: @block-title-font-size;
+		letter-spacing: 0;
+		color: @title-color;
+		
+		span {
+			.block();
+			margin-bottom: 25px;
+			color: @subtitle-color;
+		}
+	}
+	a {
+		color: @main-site-light-color;
+		&.box-name {
+			font-size: @box-name-font-size - 2;
+		}
+	}
+	form {
+		label {
+			color: @subtitle-color;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea {
+			.rounded(5px);
+		}
+		
+		p {
+			margin-bottom: 10px;
+			div.box-name {
+				padding-bottom: 0;
+				color: @second-site-light-color;
+			}
+		}
+		
+		.button {
+			padding: 0 35px;
+			border-width: 0;
+			&:hover {
+				background: darken(@main-site-light-color, 5%);
+			}
+		}
+	}
+}

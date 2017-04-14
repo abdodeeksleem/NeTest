@@ -1,0 +1,298 @@
+.page-template-page-landing-page {
+    background-image: url('/wp-content/themes/ronneby/assets/images/landing-page.jpg');
+    min-height: 68%;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    position: absolute;
+    height: 34%;
+    width:100%;
+}
+.new-to-forex-trading
+{
+    background-image: url('/wp-content/themes/ronneby/assets/images/learn-forex-bg.jpg') !important;
+}
+.new-to-forex-trading > div#footer-wrap-landing {
+    background-color: rgba(21, 20, 20, 0.75);
+}
+.page-template-page-landing-page > #main-wrap {
+    height: 100%;
+    margin:0;
+    padding:0px;
+    clear:both;
+}
+html
+{
+    height:100%;
+    position:relative;
+}
+div#footer-wrap-landing
+{
+
+    background-color:rgba(36, 170, 192,0.9);
+}
+section#footer-landing
+{
+    /*background-color:rgba(36, 170, 192,0.9);*/
+
+}
+.page-template-page-landing-page > footer
+{
+    position:relative;
+}
+#LeadForm > .form-group {
+    float: left;
+}
+#LeadForm {
+    background-color: rgba(36, 170, 192,0.4);
+    float: left;
+    padding: 0px 0px 40px 0;
+}
+.form-icon {
+    background-image:url("/wp-content/themes/ronneby/assets/images/landing-sprite.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    border-left:1px solid #FFF;
+}
+.form-icon.contact-icon {
+    background-position:-80px -57px;
+}
+.form-icon.email-icon {
+    background-position: -80px -104px;
+}
+.form-part-extra.seven {
+    margin-right: -9px;
+}
+input#inputFirstName,input#inputLastName,input#inputEmail,input#inputPhoneNumber ,select#country{
+    margin-left: 20px;
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #FFF;
+    border-left:none ;
+    border-radius:0 !important;
+    background-color:#24aac0;
+    color:#FFF;
+    font-size:14px;
+    padding:0px 20px;
+}
+input#inputPhoneCountryCode{
+    margin-left: 20px;
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    border-right:1px solid #FFF;
+    border-left:none ;
+    border-radius:0 !important;
+    background-color:#24aac0;
+    color:#FFF;
+    font-size:14px;
+
+}
+.form-icon.phone-icon {
+    background-position: -331px -104px;
+}
+.form-icon.country-icon {
+    background-position: -80px -147px;
+}
+button#leadsubmit {
+    border-radius: 0px;
+    float: none;
+    width: 92%;
+    background:#f7911e !important;
+    font-size:17px;
+}
+button#leadsubmit:hover {
+    background: #f37021 !important;
+}
+h6.title-header {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-transform: none;
+    font-family:FutigerLT;
+}
+.footer-list-landing li span {
+    background: url("/wp-content/themes/ronneby/assets/images/landing-sprite.png")no-repeat -461px -104px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    padding-right:28px;
+}
+.footer-list-landing li
+{
+    list-style-type:none;
+
+    color:white;
+    font-size:15px;
+    font-family:Futiger;
+}
+span.footer-logo {
+    background-image: url("/wp-content/themes/ronneby/assets/images/landing-sprite.png");
+    background-repeat: no-repeat;
+    height: 98px;
+    width: 89px;
+    display: block;
+    background-position: -432px -183px;
+    margin-left:30px;
+}
+.legal.columns.ten p
+{
+    color: #d1d3d4 !important;
+    text-align: justify;
+    font-size: 12px !important;
+    line-height: 14.4px !important;
+    font-family:Futiger !important;
+}
+.legal.columns.ten p span
+{
+    font-weight:bold;
+    font-size: 15px;
+    font-family:Futiger !important;
+}
+.row-fluid.legal-info {
+    border-top: 1px solid #D1D3D4;
+    padding-top: 30px;
+    display:inline-block;
+}
+span.ubtn.ubtn-large.ubtn-no-hover-bg.get-bonus.ubtn-center > .ubtn-data.ubtn-text
+{
+    font-family:Futiger, "Times New Roman" !important;
+}
+h1.widget-title
+{
+    font-family:FutigerLT !important;
+    font-weight: bold !important;
+    font-size:90px !important;
+    color:#f7911e !important;
+}
+p.with-every {
+    font-family: Futiger !important;
+    color: #6d6e71 !important;
+    font-size: 50px !important;
+    line-height:50px !important;
+}
+.header-landing-logo.columns.one {
+    margin-left: 30px;
+}
+.landing-social-media {
+    float: right;
+}
+.landing-social-media > a .facebook, .landing-social-media > a .twitter, .landing-social-media > a .linkedin, .landing-social-media > a .googleplus
+{
+    background-image:url("/wp-content/themes/ronneby/assets/images/landing-sprite.png");
+    background-repeat:no-repeat;
+    height:34px;
+    width:37px;
+    border-right:none;
+}
+.landing-social-media > a .facebook
+{
+    background-position:-80px -234px;
+}
+.landing-social-media > a .twitter
+{
+    background-position:-126px -234px;
+}
+.landing-social-media > a .linkedin
+{
+    background-position:-174px -234px;
+}
+.landing-social-media > a .googleplus
+{
+    background-position:-221px -234px;
+}
+input::-webkit-input-placeholder {
+    color: white !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: white !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;
+}
+
+input:-ms-input-placeholder {
+    color: white !important;
+}
+.form-part-extra {
+    float: left;
+}
+/* New to forex Landing page */
+.new-to-forex-trading
+{
+    background-image: url('/wp-content/themes/ronneby/assets/images/learn-forex-bg.jpg') !important;
+}
+.new-to-forex-trading > div#footer-wrap-landing {
+    background-color: rgba(21, 20, 20, 0.75);
+}
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12.form-element > .form-part.ten input#inputFirstName,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12.form-element > .form-part.ten input#inputLastName,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12.form-element > .form-part.ten input#inputEmail,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12.form-element > .form-part.twelve > .form-part-extra.seven input#inputPhoneNumber,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12.form-element > .form-part.twelve > .form-part-extra.three  input#inputPhoneCountryCode,
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .six.form-group > .col-sm-12 > .form-part.ten > select#country
+{
+    background-color: rgba(21, 20, 20, -0.25);
+}
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six >div > .panel.panel-default > .panel1-body > #LeadForm > .form-group.submit-button.six > .col-sm-12 >button#leadsubmit {
+    background: #54b749 !important;
+    border: #54b749 !important;
+}
+.new-to-forex-trading > div#footer-wrap-landing > .footer-new-to-forex-trading > .row > .columns.six > ul.footer-list-landing li span
+{
+    background:url("/wp-content/themes/ronneby/assets/images/learn-forex-sprite.png")no-repeat -201px -12px !important;
+}
+.new-to-forex > h1.widget-title
+{
+    color:#54b749 !important;
+    font-size:83px !important;
+    line-height:113px !important;
+}
+
+#message{
+    color: white;
+    font-size: 15px;
+}
+a:hover
+{
+    color:#FFF;
+}
+a{
+    color:#d1d3d4;
+}
+@media (max-width: 1400px)
+{
+    p.with-every
+    {
+        font-size: 3vw !important;
+    }
+    h1.widget-title
+    {
+        font-size: 4vw !important;
+    }
+    .page-template-page-landing-page > #main-wrap {
+        height: auto !important;
+    }
+}
+@media (max-width: 999px)
+{
+    p.with-every
+    {
+        font-size: 5vw !important;
+    }
+    h1.widget-title
+    {
+        font-size: 6vw !important;
+    }
+    .page-template-page-landing-page > #main-wrap {
+        height: auto !important;
+    }
+}

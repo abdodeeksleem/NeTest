@@ -1,0 +1,13 @@
+#change_wrap_div{ background-repeat: repeat !important; }#footer{ background-color: #2b2b2b} #sub-footer { background-color: #2b2b2b !important; } #sub-footer { background-repeat: repeat !important; } div.pp_overlay { opacity: 0.7 !important; } #footer-wrap .widget.widget_categories h3.widget-title {
+	display: none;
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+	.dfd-custom-hide-column {
+		display: none !important;
+	}
+}
+@media (min-width: 800px) and (max-width: 1070px) {
+	.dfd-custom-hide-smaller-column {
+		display: none !important;
+	}
+}

@@ -1,0 +1,29 @@
+/* -----------------------------------------
+   Login link with popup
+----------------------------------------- */
+.login-header {
+	.inline-block();
+	padding: 0 15px;
+	
+	.links {
+		line-height: @menu-inner-height;
+		
+		a {
+			.rel();
+			.block();
+			font-size: @default-text-font-size;
+			line-height: inherit;
+			color: @icon-base-color;
+			.transition(color .3s ease-in-out);
+			
+			i {
+				.rel();
+				top: 3px;
+				.block();
+			}
+		}
+	}
+	.top-avatar {
+		.hide();
+	}
+}

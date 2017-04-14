@@ -1,0 +1,173 @@
+.reveal-modal-bg {
+	opacity: 0.1 !important;
+}
+
+#loginModal {
+	background: @header-dark-background-color;
+	width: 280px;
+	height: 206px;
+	padding: 10px;
+	margin-left: auto;
+	box-shadow: none;
+	left: 20%;
+	top: @top-menu-height + @top-menu-padding * 2 + @top-panel-height + 34 !important;
+	.rounded(3px);
+	position: fixed;
+	
+	&:before {
+		content: "";
+		.block();
+		.abs();
+		width: 2px;
+		height: 2px;
+		top: -2px;
+		left: 50%;
+		margin-left: -2px;
+		border-width: 0 2px 2px 2px;
+		border-style: solid;
+		border-color: transparent transparent @third-site-light-color transparent;
+	}
+	
+	h3 {
+		.rel();
+		font-size: @default-text-font-size;
+		margin-bottom: 10px;
+		padding-left: 30px;
+		color: @font-site-dark-color;
+		i {
+			.abs();
+			font-size: 19px;
+			left: 0;
+			color: @third-site-light-color;
+		}
+	}
+
+	label {
+		color: @font-site-dark-color;
+		font-size: 12px;
+		vertical-align: top;
+		
+		a {
+			color: @font-site-dark-color;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+	
+	form {
+	        overflow: hidden;
+	}
+
+	p {
+		a {
+			color: @font-site-light-color;
+			font-size: @default-text-font-size;
+			
+			&.drop-login {
+				display: block;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		&.login-username,
+		&.login-password{
+			label {
+				display: none;
+			}
+		}
+		input[type="text"],
+		input[type="password"] {
+			color: fade(@main-site-dark-color, 80%);
+			background: fade(@main-site-dark-color, 10%);
+			border: 1px solid fade(@main-site-dark-color, 20%);
+		}
+
+		&.login-username {
+			margin-bottom: 10px;
+			input {
+				margin-bottom: inherit;
+				.rounded(3px);
+			}
+		}
+		&.login-password {
+			clear: both;
+			margin-bottom: 10px;
+			input {
+				.rounded(3px);
+				margin-bottom: 0;
+			}
+		}
+		&.login-lost-password {
+			float: left;
+			text-align: left;
+			padding-left: 10px;
+			
+			a {
+				font-size: 11px;
+				margin-right: 10px;
+				color: fade(@main-site-dark-color, 80%);
+				border-bottom: 1px dotted fade(@main-site-dark-color, 20%);
+			}
+		}
+		&.login-remember {
+			float: left;
+			padding-left: 10px;
+			.hide();
+			
+			input[type="checkbox"] {
+				margin: 0;
+			}
+		}
+		&.login-registration {
+			font-size: 11px;
+			float: left;
+			width: 50%;
+			text-align: left;
+			padding: 0 10px;
+			margin: 0;
+			color: fade(@main-site-dark-color, 80%);
+			
+			a {
+				font-size: inherit;
+				color: inherit;
+				
+				i {
+				    padding-right: 7px;
+				}
+				&:hover {
+				    i {
+					    opacity: 0.7;
+				    }
+				}
+			}
+		}
+		&.login-submit {
+			float: left;
+			text-align: left;
+
+			.button {
+				padding: 0 23px;
+				background: transparent;
+				border-color: @main-site-light-color;
+			}
+		}
+		&.login-lost-password,
+		&.login-submit,
+		&.login-remember {
+			width: 50%;
+			margin-bottom: 0;
+		}
+	}
+	
+	.close-reveal-modal {
+		font-size: 11px;
+		top: 18px;
+		text-shadow: none;
+		padding-bottom: 3px;
+		color: fade(@main-site-dark-color, 80%);
+		border-bottom: 1px dotted fade(@main-site-dark-color, 20%);
+	}
+}

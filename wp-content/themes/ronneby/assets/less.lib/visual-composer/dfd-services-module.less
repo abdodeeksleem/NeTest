@@ -1,0 +1,177 @@
+/* 
+    Created on : 04.05.2015, 10:39:49
+    Author     : DFD
+	Styles for : Services module
+*/
+.dfd-service-module-wrap {
+	.dfd-service-list {
+		list-style: none;
+		margin-bottom: 0;
+		&.icon-left {
+			.dfd-service-front {
+				text-align: center;
+				.dfd-front-wrap {
+					.inline-block();
+					overflow: hidden;
+				}
+			}
+			.dfd-service-icon {
+				float: left;
+			}
+			.heading {
+				//float: left;
+				margin-left: 40px;
+				padding-left: 20px;
+				.feature-title,
+				.subtitle {
+					text-align: left;
+				}
+			}
+		}
+		&.icon-right {
+			.dfd-service-front {
+				text-align: center;
+				.dfd-front-wrap {
+					.inline-block();
+					overflow: hidden;
+				}
+			}
+			.dfd-service-icon {
+				float: right;
+			}
+			.heading {
+				//float: right;
+				margin-right: 40px;
+				padding-right: 20px;
+				.feature-title,
+				.subtitle {
+					text-align: right;
+				}
+			}
+		}
+		&.icon-top {
+			.dfd-service-icon {
+				margin-bottom: 10px;
+			}
+			.dfd-service-icon,
+			.feature-title,
+			.subtitle {
+				text-align: center;
+			}
+		}
+		&.full-width-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				&:first-child {
+					border-top-width: 0;
+				}
+			}
+		}
+		&.half-size-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				border-left-width: 1px;
+				&:nth-child(odd) {
+					border-left-width: 0;
+				}
+				&:nth-child(-n+2) {
+					border-top-width: 0;
+				}
+			}
+		}
+		&.one-third-width-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				border-left-width: 1px;
+				&:nth-child(-n+3) {
+					border-top-width: 0;
+				}
+				&:nth-child(3n+1) {
+					border-left-width: 0;
+				}
+			}
+		}
+		&.quarter-width-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				border-left-width: 1px;
+				&:nth-child(-n+4) {
+					border-top-width: 0;
+				}
+				&:nth-child(4n+1) {
+					border-left-width: 0;
+				}
+			}
+		}
+		&.fifth-width-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				border-left-width: 1px;
+				&:nth-child(-n+5) {
+					border-top-width: 0;
+				}
+				&:nth-child(5n+1) {
+					border-left-width: 0;
+				}
+			}
+		}
+		&.sixth-width-elements {
+			.dfd-service-item {
+				border-top-width: 1px;
+				border-left-width: 1px;
+				&:nth-child(-n+6) {
+					border-top-width: 0;
+				}
+				&:nth-child(6n+1) {
+					border-left-width: 0;
+				}
+			}
+		}
+		.dfd-vertical-aligned {
+			.clearfix();
+		}
+		.dfd-service-item {
+			.rel();
+			overflow: hidden;
+			border-width: 0;
+			.dfd-service-front {
+				.rel();
+				left: 0;
+				height: 100%;
+				padding: 50px;
+				.transition(left .3s ease);
+			}
+			.dfd-service-back {
+				.abs();
+				top: 0;
+				left: 120%;
+				.block();
+				width: 100%;
+				height: 100%;
+				padding: 50px;
+				.transition(left .3s ease);
+			}
+			.dfd-service-icon {
+				
+			}
+			.feature-title {
+			}
+			.subtitle {
+			}
+			.dfd-service-description {
+				p {
+					margin-bottom: 0;
+					color: inherit;
+				}
+			}
+			&:hover {
+				.dfd-service-front {
+					left: -120%;
+				}
+				.dfd-service-back {
+					left: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+/* -----------------------------------------
+Tabs widgets styles
+----------------------------------------- */
+
+/* Only Tabbed Widget */
+.widget_crum_widget_tabs {
+	.horisontal dd {
+		width: 50%;
+	}
+}
+/* Only Widget Cat Tabs */ 
+.widget_crum_cat_tabs {
+	.horisontal dd {
+		width: 33.3%;
+	}
+}
+.widget_crum_widget_tabs,/* Tabbed Widget */
+.widget_crum_cat_tabs /* Widget Cat Tabs */ {
+	.tabs {
+		&.horisontal {
+			dd {
+				.rel();
+				border: 1px solid transparent;
+				background-color:transparent;
+				margin: 0;
+				.transition(border-color .3s ease-in-out);
+				
+				a {
+					.rel();
+					font-family: @box-name-font-family;
+					font-size: @box-name-font-size - 2;
+					font-weight: @box-name-font-weight;
+					color: @box-name-color;
+					text-transform: uppercase;
+					line-height: 40px;
+					padding: 0;
+					background: transparent;
+					border-color: transparent;
+				}
+				&.active {
+					border-color: @border-color;
+				}
+			}
+		}
+	}
+	article.mini-news {
+		background: none;
+		margin: 0 0 9px;
+		border-left: none;
+		padding: 20px 0;
+		.rel();
+		.entry-thumb {
+			.abs();
+			.rounded(50%);
+			top: 25px;
+			color: @news-widgets-entry-meta-icon-color;
+			width: 50px;
+			height: 50px;
+			
+			img{
+				.block();
+				.rounded(50%);
+			}
+			i {
+				.block();
+				font-size: 25px;
+				background: @forth-site-dark-color;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+			}
+		}
+		.box-name,
+		.entry-meta,
+		.entry-date {
+			margin-left: 70px;
+		}
+		.box-name {
+			.dfd-widget-post-typ();
+			a {
+				.transition(color .3s ease-in-out);
+				&:hover {
+					color: @main-site-light-color;
+				}
+			}
+		}
+		.entry-meta {
+			height: 30px;
+			line-height: 30px;
+			padding: 0;
+			> span {
+				.subtitle();
+				height: 30px;
+				line-height: 30px !important;
+			}
+			.author {
+				padding-left: 0;
+			}
+			.delim {
+				border-color: @border-color;
+			}
+			.entry-comments {
+				.dfd-widget-comment-author-typ();
+				padding: 0;
+				a,
+				span {
+					.transition(color .3s ease-in-out);
+				}
+				&:hover {
+					a,
+					span {
+						color: @main-site-light-color;
+					}
+				}
+			}
+			.entry-date {
+				margin: 0;
+			}
+		}
+		.entry-date {
+			.subtitle();
+			
+			i {
+				padding-right: 10px;
+				padding-left: 1px;
+			}
+		}
+	}
+	#comments-p-tabTab {
+		article.mini-news {
+			padding: 15px 0 0 19px; 
+			
+			.box-name {
+				margin-left: 50px;
+			}
+			.entry-summary {
+				margin-left: 50px;
+			}
+		}
+	}
+}

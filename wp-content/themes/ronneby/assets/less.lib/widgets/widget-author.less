@@ -1,0 +1,61 @@
+.widget.widget_dfd_author {
+	@s: 80px;
+	.author-box {
+		text-align: center;
+		border: 1px solid @border-color;
+		background-color: @main-site-dark-color;
+		> .widget-title {
+			padding: 20px 20px 0 20px;
+		}
+	}
+	.author-image {
+		margin-bottom: 25px;
+		img {
+			.block();
+			.rounded(50%);
+			margin: 0 auto;
+		}
+		i {
+			.block();
+			width: @s;
+			height: @s;
+			line-height: @s;
+			font-size: 40px;
+			background: @background-gray;
+		}
+	}
+	
+	.heading {
+		padding: 0 20px;
+		h3.widget-title {
+			margin-bottom: 0;
+		}
+		h3.widget-title + .subtitle {
+			margin-top: 5px;
+		}
+	}
+	
+	.entry-content {
+		padding: 0 20px;
+		margin-top: 15px;
+	}
+	
+	.widget.soc-icons {
+		margin-top: 20px;
+		&.dfd-soc-icons-hover-style-13 a {
+			.block();
+			float: left;
+			margin: 0;
+			padding-left: 0;
+			&:before {
+				border-right-width: 0;
+				border-bottom-width: 0;
+			}
+			&:first-child {
+				&:before {
+					border-left-width: 0;
+				}
+			}
+		}
+	}
+}

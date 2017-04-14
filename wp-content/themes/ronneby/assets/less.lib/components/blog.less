@@ -1,0 +1,346 @@
+/* 
+    Created on : 02.10.2015, 13:50:01
+    Author     : DFD
+	Styels for : New blog style
+*/
+#layout.dfd-blog-loop {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	> .row.full_width {
+		width: 100%;
+		margin: 0;
+		padding: 0 30px;
+	}
+	.sort-panel {
+		text-align: inherit;
+	}
+	.dfd-blog-wrap {
+		.dfd-blog-fitRows {
+			.post {
+				margin-bottom: 0;
+				.dfd-read-share {
+					margin-bottom: 25px;
+				}
+				&.format-audio {
+					.entry-media {
+						padding-top: 0;
+					}
+				}
+				&.format-quote {
+					.cover .dfd-news-categories {
+						margin-top: 20px;
+					}
+					.entry-media {
+						padding: 0;
+						margin: 0;
+						border: none;
+						.rounded(0);
+					}
+					.entry-content {
+						padding: 0;
+						background: transparent;
+					}
+				}
+			}
+		}
+		.dfd-blog-left-image,
+		.dfd-blog-right-image {
+			margin: 0 -10px;
+			.post {
+				.clearfix();
+				.cover {
+					.dfd-news-categories {
+						margin-top: 0;
+					}
+				}
+				.entry-media {
+					width: 44.444%;
+					margin: 0;
+					padding: 0 10px;
+				}
+				.dfd-content-wrap {
+					width: 55.556%;
+					margin: 0;
+					padding: 0 10px;
+				}
+				&.format-audio {
+					.entry-media {
+						padding-top: 0;
+					}
+				}
+				&.format-quote {
+					.entry-media {
+						padding: 0 10px;
+						border: none;
+					}
+					.dfd-content-wrap {
+						.entry-content {
+							padding: 0;
+							background: transparent;
+						}
+					}
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.dfd-blog-left-image {
+			.entry-media {
+				float: left;
+			}
+			.dfd-content-wrap {
+				float: right;
+			}
+		}
+		.dfd-blog-right-image {
+			.entry-media {
+				float: right;
+			}
+			.dfd-content-wrap {
+				float: left;
+			}
+		}
+		.post {
+			padding-bottom: 0;
+			border-bottom: none;
+			&.format-audio {
+				.entry-media {
+					padding-top: 30px;
+					margin-bottom: 25px;
+				}
+				.audioplayer {
+					background: @third-site-dark-color;
+					border: none;
+					.rounded(2px);
+					.audioplayer-playpause,
+					.audioplayer-volume {
+						border: none;
+					}
+					.audioplayer-playpause {
+						a {
+							&:before {
+								left: 0;
+								color: @main-site-dark-color;
+							}
+						}
+					}
+					.audioplayer-volume {
+						a {
+							&:before {
+								left: 0;
+								color: fade(@main-site-dark-color, 50%);
+							}
+						}
+					}
+					.audioplayer-time {
+						color: fade(@main-site-dark-color, 50%);
+					}
+					.audioplayer-bar {
+						top: 0;
+						left: 55px;
+						right: 55px;
+						height: 100%;
+						margin: 0;
+						background: fade(@main-site-dark-color, 15%);
+						&:before {
+							.hide();
+						}
+						.audioplayer-bar-played {
+							height: 100%;
+							background: @third-site-light-color;
+						}
+						.audioplayer-bar-loaded {
+							background: fade(@main-site-dark-color, 15%);
+						}
+					}
+					.audioplayer-volume {
+						.audioplayer-volume-adjust {
+							height: 100%;
+							background: @third-site-dark-color;
+							border: none;
+							.rounded-top-left(2px);
+							.rounded-bottom-left(2px);
+							> div {
+								width: 100%;
+								height: 100%;
+								margin: 0;
+								&:before {
+									.hide();
+								}
+								> div {
+									left: auto;
+									right: 0;
+									height: 100%;
+									background: @third-site-light-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.format-quote {
+				.entry-media {
+					.rel();
+					padding: 35px;
+					margin-top: 15px;
+					background: transparent;
+					border: 1px solid @border-color;
+					.rounded(2px);
+					.icon-wrap {
+						.abs();
+						top: -10px;
+						right: -20px;
+						margin: 0;
+						i {
+							font-size: 44px;
+							color: fade(@block-title-color, 20%);
+						}
+					}
+					a.quote-content {
+						line-height: 2.1;
+						text-decoration: underline;
+						padding-bottom: 0;
+						color: @block-title-color;
+					}
+					.quote-author {
+						font-size: @box-name-font-size;
+						text-transform: @box-name-text-transform;
+						color: @box-name-color;
+					}
+					.post-like-wrap {
+						.block();
+					}
+				}
+				.cover {
+					.dfd-news-categories {
+						margin-top: 0;
+					}
+				}
+			}
+			&.format-gallery {
+				.slider-control {
+					&.prev,
+					&.next {
+						width: 32px;
+						height: 32px;
+						line-height: 32px;
+						top: auto;
+						bottom: 0;
+						margin: 0;
+						&:before {
+							font-size: 15px;
+						}
+						span {
+							.hide();
+						}
+					}
+					&.prev {
+						left: 0;
+					}
+					&.next {
+						left: 33px;
+					}
+				}
+			}
+			&.dfd-title-top {
+				.cover {
+					.dfd-news-categories {
+						margin-top: 0;
+					}
+					.entry-media {
+						margin-top: 20px;
+					}
+				}
+			}
+			.cover {
+				.dfd-news-categories {
+					height: 25px;
+					margin-top: 20px;
+					.byline.category {
+						.inline-block();
+						a {
+							font-size: @default-text-font-size - 1;
+							.block();
+							float: left;
+							line-height: 1;
+							padding: 6px 13px;
+							color: @main-site-dark-color;
+							background: @third-site-light-color;
+						}
+					}
+				}
+				.entry-media {
+					margin-bottom: 0;
+				}
+				div.dfd-blog-title {
+					text-align: inherit;
+					margin-top: 15px;
+				}
+				.dfd-meta-wrap {
+					text-align: inherit;
+					margin-top: 5px;
+					> div.entry-meta {
+						.inline-block();
+						a {
+							border-bottom: 1px dotted @third-site-light-color;
+						}
+						.byline {
+							font-family: inherit;
+						}
+					}
+				}
+				.entry-content {
+					text-align: inherit;
+					margin-top: 15px;
+					p {
+						margin-bottom: 0;
+					}
+				}
+				.dfd-read-share {
+					padding: 7px 0;
+					margin-top: 25px;
+					border-top: 1px dotted @border-color;
+					border-bottom: 1px dotted @border-color;
+					.read-more-wrap {
+						float: left;
+						height: 36px;
+						line-height: 36px;
+						a {
+							&:not(.slide-up) {
+								color: @box-name-color;
+							}
+							&.chaffle {
+								&:hover {
+									color: @main-site-light-color;
+								}
+							}
+							&.slide-up {
+								.rel();
+								top: 50%;
+								height: 1em;
+								line-height: 1;
+								margin-top: -.5em;
+							}
+							&.simple {
+								height: 100%;
+								line-height: inherit;
+								padding-left: 0;
+								border-left: 0px solid transparent;
+								.transition(~"padding-left .3s ease, border-left-width .3s ease, border-left-color .3s ease");
+								&:hover {
+									padding-left: 15px;
+									border-left-width: 3px;
+									border-left-color: @third-site-light-color;
+								}
+							}
+						}
+					}
+					.dfd-blog-share-popup-wrap {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}

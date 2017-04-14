@@ -1,0 +1,39 @@
+.widget_dfd_vcard_simple {
+	.vcard-field {
+		.rel();
+		line-height: 1.6;
+		margin-bottom: 0;
+		i {
+			.abs();
+			font-size: 15px;
+			top: 5px;
+			&.crdash-envelope_closed {
+				font-size: 12px;
+			}
+		}
+		.vcard-field-name {
+			color: @title-color;
+			font-weight: 600;
+			margin-left: 30px;
+		}
+		p {
+			margin-left: 30px;
+			a {
+				.subtitle();
+				.transition(color .3s ease-in-out);
+				&:hover {
+					color: @main-site-light-color;
+				}
+			}
+		}
+		&.vcard-field-value {
+			font-family: @default-text-font-family;
+		}
+		&.vcard-field-add-info {
+			margin-left: 0;
+		}
+	}
+	.row + .vcard-field-add-info {
+		padding-top: 0;
+	}
+}

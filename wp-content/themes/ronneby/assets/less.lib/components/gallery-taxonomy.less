@@ -1,0 +1,54 @@
+/* 
+    Created on : 15.09.2015, 17:12:04
+    Author     : DFD
+	Styles for : Gallery custom taxonomy
+*/
+#layout.dfd-single-gallery,
+#layout.dfd-gallery-loop {
+	margin-top: 0;
+	margin-bottom: 0;
+	> .row.full_width {
+		width: 100%;
+		margin: 0;
+		padding: 0 30px;
+	}
+	.dfd-gallery-single-item,
+	.dfd-gallery-item {
+		.rel();
+		img {
+			.block();
+			min-width: 100%;
+		}
+		div.block-title {
+			&.dfd-title-top {
+				margin-bottom: 15px;
+			}
+			&.dfd-title-bottom {
+				margin-top: 15px;
+			}
+			&.dfd-title-front {
+				.abs();
+				top: 0;
+				left: 0;
+				.block();
+				width: 100%;
+				height: 100%;
+				background: fade(@forth-site-dark-color, 20%);
+				.transition(background .3s ease);
+				> a {
+					.abs();
+					top: 50%;
+					left: 0;
+					.block();
+					width: 100%;
+					text-align: center;
+					color: @main-site-dark-color;
+					.transform(translateY(-50%));
+				}
+				&:hover {
+					background: fade(@forth-site-dark-color, 50%);
+				}
+			}
+		}
+	}
+}

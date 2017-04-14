@@ -1,0 +1,52 @@
+/* Recent comments widget styles */
+.widget_dfd_recent_comments {
+	.widget-recentcomments {
+		.recentcomments {
+			border-bottom: 1px solid @border-color;
+			padding: 15px 0;
+			p {
+				line-height: 1.6;
+				margin-bottom: 0;
+				color: @subtitle-color;
+				
+				&.comment-text {
+					.dfd-widget-comment-adjacenttext-typ();
+					padding-bottom: 5px;
+					.author {
+						.dfd-widget-comment-author-typ();
+						//color: @title-color;
+					}
+					a {
+						.dfd-widget-comment-namepost-typ();
+						.transition(color .3s ease-in-out);
+						
+						&:hover {
+							color: @title-color;
+						}
+					}
+				}
+			}
+			.entry-meta {
+				height: auto;
+				margin: 0;
+				
+				> * {
+					height: auto;
+					line-height: inherit;
+					//text-decoration: underline;
+				}
+				.comments-date {
+					.subtitle();
+					//.hide();
+				}
+			}
+			&:first-child {
+				padding-top: 0;
+			}
+			&:last-child {
+				border-bottom-width: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}

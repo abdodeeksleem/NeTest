@@ -1,0 +1,35 @@
+DEP378510DQv80MU3,after_create_deposit,08:12:09am,crm_response:Array
+DEP376021ESBXMjYE,after_create_deposit,01:25:19pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021ZIyv9AzU,after_create_deposit,01:31:00pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP363095zLDHOF1K,after_create_deposit,09:22:50am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021Yk1bijN4,after_create_deposit,03:25:36pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021jadFuUuC,after_create_deposit,03:34:05pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021ebkdMMGl,after_create_deposit,12:18:04pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP363095fS8AyPQ7,after_create_deposit,02:34:04pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021bor680io,after_create_deposit,04:17:26am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021PJ4s5Cqs,after_create_deposit,04:20:33am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP37269341QA1Bid,after_create_deposit,08:38:33am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP372693X5kv9Vs1,after_create_deposit,08:39:58am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP3726932VErC2pM,after_create_deposit,08:42:37am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021eKzYhMzC,after_create_deposit,12:55:39pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021AJ6oPBNT,after_create_deposit,12:16:22pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021NuMczJbR,after_create_deposit,08:02:17am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021eAWA660z,after_create_deposit,08:04:36am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021ftLfWMJ6,after_create_deposit,08:06:19am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021cxMceOsV,after_create_deposit,11:37:04am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021BUfKw8Tu,after_create_deposit,11:39:07am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021x9ow403F,after_create_deposit,12:22:56pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP372693OAGD332i,after_create_deposit,03:30:39pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP372693N3lylfHw,after_create_deposit,03:32:32pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP37269322TOrpGN,after_create_deposit,03:33:43pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021YO8f4Wjf,after_create_deposit,03:39:00pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP3760211XqN6Kzf,after_create_deposit,03:40:12pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021smnfaVOg,after_create_deposit,12:21:40pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021teCmpfC4,after_create_deposit,12:23:36pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021qw2qvUz7,after_create_deposit,08:29:27am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021HkpI37sk,after_create_deposit,08:32:25am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021GUNO22hH,after_create_deposit,01:03:33pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021vxC2IzIR,after_create_deposit,01:04:46pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021vxC2IzIR,after_create_deposit,01:05:36pm,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP376021b4MBea4d,after_create_deposit,09:38:25am,crm_response:{"Code":"Success","Message":"The transaction was successfully created and approved. Trading platform updated: Yes. "}
+DEP434663EPuVMDPE,after_create_deposit,08:33:18am,crm_response:{"Code":"Success","Message":"The transaction was successfully created. Trading platform updated: No. "}

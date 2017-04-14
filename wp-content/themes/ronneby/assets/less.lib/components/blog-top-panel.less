@@ -1,0 +1,118 @@
+/*------------------------------------------------------------------
+Blog top panel
+-------------------------------------------------------------------*/
+.blog-top-block {
+	display: block;
+	
+	.box-name {
+		.inline-block();
+		font-family: @box-name-font-family;
+		font-size: @box-name-font-size;
+	}
+	.sel-dropdown {
+		.inline-block();
+		.rel();
+		padding: 0 0 20px 20px;
+		
+		> a {
+			.rel();
+			font-size: @default-text-font-size;
+			padding-right: 20px;
+			color: @title-color;
+			
+			span {
+				width: 1px;
+				height: 5px;
+				.abs();
+				top: 50%;
+				right: 3px;
+				margin-top: -2.5px;
+				background: @gray-light;
+				
+				&:after {
+					content: "";
+					.block();
+					width: 5px;
+					height: 1px;
+					.abs();
+					top: 2px;
+					right: 0;
+					margin-right: -2px;
+					background: @gray-light;
+				}
+			}
+		}
+		ul {
+			list-style: none;
+			.abs();
+			top: 70px;
+			left: 0;
+			padding: 0;
+			background: @main-site-dark-color;
+			min-width: 200px;
+			height: 0;
+			z-index: -1;
+			.rounded(3px);
+			.opacity(0);
+			.box-shadow(4px 4px 4px 0 fade(@forth-site-dark-color, 20%));
+			.transition(~"top .2s ease-in-out, opacity .3s ease-in-out, height .3s ease-in-out");
+			
+			&.category-filer {
+				margin-right: 10px;
+				
+				.icon-wrap {
+					float: left;
+					line-height: 3em;
+					width: 30px;
+					text-align: center;
+					
+					i {
+						line-height: inherit;
+					}
+				}
+				a {
+					font-size: 13px;
+					text-transform: uppercase;
+					margin-left: 40px;
+				}
+			}
+			li {
+				line-height: 3em;
+				padding: 5px 10px;
+				background: transparent;
+				border-bottom: 1px solid @border-color;
+				.transition(background .3s ease-in-out);
+				
+				a {
+					line-height: 3em;
+					display: block;
+					color: @title-color;
+				}
+				&:last-child {
+					border-bottom-width: 0;
+				}
+				&:hover {
+					background: @background-gray;
+				}
+			}
+			&.filter-tags {
+				li {
+					padding: 5px 20px;
+				}
+			}
+		}
+		&.hovered ul {
+			z-index: 7;
+			top: 40px;
+			height: auto;
+			.opacity(1);
+		}
+	}
+	.categories-all-link {
+		float: right;
+		
+		a {
+			color: @title-color;
+		}
+	}
+}

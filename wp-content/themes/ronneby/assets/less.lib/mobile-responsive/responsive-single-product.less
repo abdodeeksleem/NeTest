@@ -1,0 +1,31 @@
+/* 
+    Created on : 09.01.2015, 14:37:57
+    Author     : DFD
+	Styles for : Woocommerce single product
+*/
+@media only screen and (min-width: @screen-medium) {
+	.single-product {
+		.images {
+			.single-product-image,
+			.single-product-thumbnails {
+				padding-right: 60px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: @screen-medium - 1) {
+	.single-product {
+		.images {
+			.single-product-image,
+			.single-product-thumbnails {
+				padding-right: 0;
+			}
+		}
+		.entry-summary {
+			.share-cover,
+			.product-meta {
+				padding-left: 35px;
+			}
+		}
+	}
+}
